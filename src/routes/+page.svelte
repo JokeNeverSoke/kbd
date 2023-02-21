@@ -1,8 +1,12 @@
-<script>
-	console.log('HI');
+<script lang="ts">
+	import TypeInput from '@/lib/components/TypeInput.svelte';
 </script>
 
-<div class="mx-auto text-2xl container ">
-	<h1>Welcome to <kbd>KBD</kbd></h1>
-	<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<div class="">
+	<div class="mx-auto">
+		<TypeInput
+			onComplete={() => console.log('yay')}
+			text={'This is a typing test.\nOnly for personal use.'}
+		/>
+	</div>
 </div>
